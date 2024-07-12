@@ -1,0 +1,100 @@
+/* styles.css */
+body {
+    background: linear-gradient(to right, #ffd89b, #19547b); /* Gradient background */
+    font-family: 'Source Code Pro', monospace; /* Coding style font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+.bio-container {
+    background-color: #333; /* Dark grey background */
+    border-radius: 20px;
+    width: 90%; /* Responsive max width */
+    max-width: 300px; /* Default width for desktop */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Enhanced shadow for depth */
+    text-align: center;
+    overflow: hidden; /* Ensures no content spills out */
+}
+
+.profile-section img {
+    width: 100px; /* Adjusted width */
+    height: 100px; /* Adjusted height */
+    border-radius: 50%;
+    border: 3px solid #fff; /* White border for emphasis */
+    margin-bottom: 15px; /* Increased spacing */
+}
+
+.profile-section h1 {
+    color: #FFF;
+    margin: 0; /* Reduced spacing to handle small screens */
+    font-size: 20px; /* Adjusted text size for h1 */
+}
+
+.profile-section p {
+    color: #FFF;
+    margin: 0; /* Reduced spacing to handle small screens */
+    font-size: 14px; /* Smaller font size for p */
+}
+
+.links .btn {
+    display: block;
+    background-color: #FFF;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px 0; /* Increased margin for a better look */
+    border-radius: 25px; /* More pronounced rounded corners */
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px; /* Slightly larger font for readability */
+    text-align: center; /* Ensure text is centered */
+}
+
+.links .btn:hover {
+    transform: translateY(-3px); /* Subtle lift effect */
+    background-color: #f0f0f0; /* Hover color */
+}
+
+.links .footer-link {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.links .footer-link:hover {
+    color: #d0d0d0; /* Subtle color change on hover */
+}
+
+.social-links .social-icon {
+    color: #FFF; /* Icon color */
+    font-size: 24px; /* Icon size */
+    margin: 10px; /* Increased spacing */
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links .social-icon:hover {
+    transform: scale(1.1); /* Slight increase in size */
+}
+
+@media (max-width: 768px) {
+    .bio-container {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .profile-section h1, .profile-section p {
+        font-size: 18px; /* Slightly reduced font size on mobile */
+    }
+
+    .links .btn {
+        font-size: 14px; /* Slightly reduced font size on mobile */
+        padding: 8px 16px; /* Adjust padding */
+    }
+}
